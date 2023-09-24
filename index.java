@@ -20,5 +20,57 @@ class index{
             System.out.println();
         }
 
+          //ADD THE 0 & x
+
+
+          static void p_holder ( char[][] a_borad, int pos, String user){
+            char syb = 'X';
+            if (user.equals("You")) {
+                syb = 'X';
+            } else if (user.equals("comp")) {
+                syb = '0';
+            }
+            switch (pos) {
+                case 1:
+                    a_borad[0][0] = syb;
+                    break;
+                case 2:
+                    a_borad[0][2] = syb;
+                    break;
+
+                case 3:
+                    a_borad[0][4] = syb;
+                    break;
+
+                case 4:
+                    a_borad[2][0] = syb;
+                    break;
+
+                case 5:
+                    a_borad[2][0] = syb;
+                    break;
+                case 6:
+                    a_borad[2][2] = syb;
+                    break;
+
+                case 7:
+                    a_borad[2][4] = syb;
+                    break;
+
+                case 8:
+                    a_borad[4][0] = syb;
+                    break;
+
+                case 9:
+                    a_borad[4][4] = syb;
+                    break;
+
+                default:
+                    System.out.println("Invalid Input");
+            }
+            print_borad(a_borad);
+        }
+
+
     }
 }
